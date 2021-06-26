@@ -1,25 +1,29 @@
 import React from 'react';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import logoIm from '../../assets/img/svg/im_logo_02.svg';
+// <img src={logoIm} width="35" height="35" alt="logoIm" />{' '}IMSAT
 
 const NavbarComponents = () => {
   return (
-    <Navbar className="" variant="dark" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#home">
-          <img src={logoIm} width="35" height="35" alt="logoIm" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className="myNavbar">
+      <Navbar expand="lg">
+        <Container fluid>
+          <Navbar.Brand href="#home">
+            <img src={logoIm} width="35" height="35" alt="logoIm" />{' '}IMSAT
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#about">Link</Nav.Link>
+              <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+    </div>
   );
 };
 
