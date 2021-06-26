@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, Nav, Container} from 'react-bootstrap';
-import logoIm from '../../assets/img/svg/im_logo_02.svg';
+import logoIm from '../../assets/img/svg/squarelogo.svg';
 // <img src={logoIm} width="35" height="35" alt="logoIm" />{' '}IMSAT
 
 const NavbarComponents = () => {
@@ -22,7 +22,6 @@ const NavbarComponents = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
     </div>
   );
 };
