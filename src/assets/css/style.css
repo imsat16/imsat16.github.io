@@ -16,7 +16,7 @@
 }
 
 .navbar{
-    margin-right: 0;
+    justify-content:space-between;
 }
 
 /* h1,h2,h3,h4 {
