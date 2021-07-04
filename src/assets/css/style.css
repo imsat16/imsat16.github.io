@@ -11,8 +11,19 @@
 .center {
     color: #0F1923;
     padding-top: 25%;
-     justify-content: center;
+    justify-content: center;
     align-self: center;
+}
+.center-txt {
+     width: 100%;
+     height: 100%;
+     display: table;
+     text-align: center;
+}
+
+.center-txt>.child {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .navbar{
