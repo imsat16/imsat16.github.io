@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1c241ec5.chunk.css",
-    "main.js": "/portfolio/static/js/main.6148cdfd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6148cdfd.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
-    "static/css/2.fb17aa6d.chunk.css": "/portfolio/static/css/2.fb17aa6d.chunk.css",
-    "static/js/2.d4e4e9a6.chunk.js": "/portfolio/static/js/2.d4e4e9a6.chunk.js",
-    "static/js/2.d4e4e9a6.chunk.js.map": "/portfolio/static/js/2.d4e4e9a6.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/2.fb17aa6d.chunk.css.map": "/portfolio/static/css/2.fb17aa6d.chunk.css.map",
-    "static/css/main.1c241ec5.chunk.css.map": "/portfolio/static/css/main.1c241ec5.chunk.css.map",
-    "static/js/2.d4e4e9a6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d4e4e9a6.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/portfolio/static/media/Valorant Font.86ec8370.ttf",
-    "static/media/s.8f4b8bc4.png": "/portfolio/static/media/s.8f4b8bc4.png",
-    "static/media/squarelogo.87d1a1c4.svg": "/portfolio/static/media/squarelogo.87d1a1c4.svg"
+    "main.css": "/static/css/main.10f8bd69.chunk.css",
+    "main.js": "/static/js/main.6148cdfd.chunk.js",
+    "main.js.map": "/static/js/main.6148cdfd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0605945.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
+    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
+    "static/js/2.5d12553f.chunk.js": "/static/js/2.5d12553f.chunk.js",
+    "static/js/2.5d12553f.chunk.js.map": "/static/js/2.5d12553f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.10f8bd69.chunk.css.map": "/static/css/main.10f8bd69.chunk.css.map",
+    "static/js/2.5d12553f.chunk.js.LICENSE.txt": "/static/js/2.5d12553f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Valorant Font.86ec8370.ttf",
+    "static/media/s.8f4b8bc4.png": "/static/media/s.8f4b8bc4.png",
+    "static/media/squarelogo.87d1a1c4.svg": "/static/media/squarelogo.87d1a1c4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9f76519.js",
-    "static/css/2.fb17aa6d.chunk.css",
-    "static/js/2.d4e4e9a6.chunk.js",
-    "static/css/main.1c241ec5.chunk.css",
+    "static/js/runtime-main.d0605945.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.5d12553f.chunk.js",
+    "static/css/main.10f8bd69.chunk.css",
     "static/js/main.6148cdfd.chunk.js"
   ]
 }
