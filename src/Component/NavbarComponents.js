@@ -12,10 +12,9 @@ const NavbarComponents = () => {
   return (
     <Router>
       <div>
-        {/* Desktop Interface */}
-        <div className = 'd-sm-none d-md-block'>
+        <div className="d-none d-md-block">
           <div className="myNavbar">
-            <Navbar expand="lg" bg="dark" variant={'dark'}>
+            <Navbar expand="lg">
               <Container fluid>
                 <Navbar.Brand as={Link} to={'/'}>
                   <img src={logoIm} width="35" height="35" alt="logoIm" />
@@ -35,9 +34,14 @@ const NavbarComponents = () => {
             </Navbar>
           </div>
         </div>
-        <div className = 'd-sm-block d-md-none fixed-top'>
+        <div className="d-md-none d-sm-block">
           <div className="myNavbar">
-            <Navbar expand="lg" bg="dark" variant={'dark'}>
+            <Navbar
+              expand="lg"
+              className="fixed-top"
+              bg="dark"
+              variant={'dark'}
+            >
               <Container fluid>
                 <Navbar.Brand as={Link} to={'/'}>
                   <img src={logoIm} width="35" height="35" alt="logoIm" />

@@ -1,7 +1,4 @@
-/* @font-face {
-    font-family: Valorant;
-    src: url(../fonts/Valorant\ Font.ttf);
-} */
+
 
 .profileImage {
     width: 100%;
@@ -29,7 +26,3 @@
 .navbar{
     justify-content:space-between;
 }
-
-/* h1,h2,h3,h4 {
-    font-family: Valorant;
-} */
