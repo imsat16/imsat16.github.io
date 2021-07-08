@@ -1,9 +1,14 @@
 import React from 'react';
 import {Row, Col, Container, Button} from 'react-bootstrap';
-import profileImage from '../assets/img/s.png';
-import {FaArrowRight} from 'react-icons/fa';
+import profileImage from '../assets/img/pr.png';
 import {BrowserRouter as Router, useHistory} from 'react-router-dom';
-import {FaInstagram, FaTwitter, FaGithub} from 'react-icons/fa';
+import {
+  FaArrowRight,
+  FaYoutube,
+  FaInstagram,
+  FaTwitter,
+  FaGithub,
+} from 'react-icons/fa';
 
 const Home = () => {
   let history = useHistory ();
@@ -16,28 +21,26 @@ const Home = () => {
       <div>
         {/* Desktop */}
         <div className="d-none d-md-block">
-          <Container fluid>
+          <Container>
             <Row className="align-items-center">
-              <Col md={1} />
-              <Col md={4}>
-                <h1>Hello im Imam</h1>
-                <br />
-                <h4>Im a Web Developer</h4>
-                <br />
-                <Button
-                  variant="outline-secondary"
-                  type="button"
-                  onClick={handleClick}
-                >
-                  About Me <FaArrowRight />
-                </Button>
-              </Col>
               <Col md={6}>
                 <img
                   src={profileImage}
                   className="profileImage"
                   alt="profileImage"
                 />
+              </Col>
+              <Col md={5}>
+                <h1>Hello Im Imam</h1>
+                <h4>Im a Web Developer</h4>
+                <br />
+                <Button
+                  variant="outline-dark"
+                  type="button"
+                  onClick={handleClick}
+                >
+                  About Me <FaArrowRight />
+                </Button>
               </Col>
               <Col md={1}>
                 <Row>
@@ -58,36 +61,47 @@ const Home = () => {
                     <FaTwitter />
                   </Button>
                 </Row>
+                <Row className="mb-2">
+                  <Button
+                    onClick={() =>
+                      window.open (
+                        'https://www.youtube.com/channel/UCE9H0gB19xCSnKjAV6sGPWg',
+                        '_blank'
+                      )}
+                    variant="outline-dark"
+                  >
+                    <FaYoutube />
+                  </Button>
+                </Row>
                 <Row>
                   <Button
                     onClick={() =>
                       window.open ('https://github.com/imsat16', '_blank')}
-                    variant="outline-dark"
-                  >
+                    variant="outline-dark">
                     <FaGithub />
                   </Button>
                 </Row>
-
               </Col>
             </Row>
           </Container>
+
         </div>
         {/* Mobile */}
         <div className="d-sm-block d-md-none">
           <Container className="mt-5 mb-5 text-center">
             <Row className="justify-content-center">
               <div>
-                <h2 className="text-center mt-4">Hello im Imam</h2>
+                <h1 className="text-center mt-5">Hello im Imam</h1>
               </div>
               <Row>
                 <img
                   src={profileImage}
-                  className="profileImage"
+                  className="profileImage mx-auto"
                   alt="profileImage"
                 />
               </Row>
               <Col xs="12">
-                <h5 className="text-center">Web Dev | Mobile Dev</h5>
+                <h4 className="text-center">Web Dev | Mobile Dev</h4>
               </Col>
               <Col xs="12" className="my-4">
                 <Button variant="dark" type="button" onClick={handleClick}>

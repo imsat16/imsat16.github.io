@@ -34,8 +34,9 @@ const NavbarComponents = () => {
             </Navbar>
           </div>
         </div>
+        
         <div className="d-md-none d-sm-block">
-          <div className="myNavbar">
+          <div className="myNavbar d-flex align-content-around flex-wrap">
             <Navbar
               expand="lg"
               className="fixed-top"

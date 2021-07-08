@@ -1,8 +1,21 @@
 
+#more {
+    display: none;
+}
 
 .profileImage {
-    width: 100%;
+    width: 80%;
     height: auto;
+}
+
+.skils{
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+.skils-vector{
+    width: 100%;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 .center {
@@ -26,3 +39,4 @@
 .navbar{
     justify-content:space-between;
 }
+
