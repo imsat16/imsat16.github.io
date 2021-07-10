@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row, Col, Container, Button} from 'react-bootstrap';
 import profileImage from '../assets/img/pr.png';
+import PDF from '../assets/Document/resume.pdf'
 import {BrowserRouter as Router, useHistory} from 'react-router-dom';
 import {
   FaArrowRight,
@@ -34,6 +35,12 @@ const Home = () => {
                 <h1>Hello Im Imam</h1>
                 <h4>Im a Web Developer</h4>
                 <br />
+                <Button
+                   href ={PDF}
+                  >
+                  Download CV
+                </Button>
+                {" "}
                 <Button
                   variant="outline-dark"
                   type="button"
