@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row, Col, Container, Button} from 'react-bootstrap';
 import profileImage from '../assets/img/pr.png';
-import PDF from '../assets/Document/resume.pdf'
+import PDF from '../assets/Document/resume.pdf';
 import {BrowserRouter as Router, useHistory} from 'react-router-dom';
 import {
   FaArrowRight,
@@ -35,12 +35,10 @@ const Home = () => {
                 <h1>Hello Im Imam</h1>
                 <h4>Im a Web Developer</h4>
                 <br />
-                <Button
-                   href ={PDF}
-                  >
+                <Button href={PDF}>
                   Download CV
                 </Button>
-                {" "}
+                {' '}
                 <Button
                   variant="outline-dark"
                   type="button"
@@ -84,7 +82,8 @@ const Home = () => {
                   <Button
                     onClick={() =>
                       window.open ('https://github.com/imsat16', '_blank')}
-                    variant="outline-dark">
+                    variant="outline-dark"
+                  >
                     <FaGithub />
                   </Button>
                 </Row>
@@ -110,9 +109,14 @@ const Home = () => {
               <Col xs="12">
                 <h4 className="text-center">Web Dev | Mobile Dev</h4>
               </Col>
-              <Col xs="12" className="my-4">
+              <Col xs="12" className="mt-4 mb-2">
                 <Button variant="dark" type="button" onClick={handleClick}>
                   About Me <FaArrowRight />
+                </Button>
+              </Col>
+              <Col xs="12" className="mb-4">
+                <Button href={PDF}>
+                  Download CV
                 </Button>
               </Col>
               <Col xs="12">
@@ -140,6 +144,16 @@ const Home = () => {
                   <FaGithub />
                 </Button>
                 {' '}
+                <Button
+                  onClick={() =>
+                    window.open (
+                      'https://www.youtube.com/channel/UCE9H0gB19xCSnKjAV6sGPWg',
+                      '_blank'
+                    )}
+                  variant="outline-dark"
+                >
+                  <FaYoutube />
+                </Button>
               </Col>
             </Row>
           </Container>
