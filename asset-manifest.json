@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.279ac84c.chunk.css",
-    "main.js": "/static/js/main.f3f0612a.chunk.js",
-    "main.js.map": "/static/js/main.f3f0612a.chunk.js.map",
+    "main.css": "/static/css/main.cfaf5823.chunk.css",
+    "main.js": "/static/js/main.4be67c0b.chunk.js",
+    "main.js.map": "/static/js/main.4be67c0b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d0605945.js",
     "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
-    "static/js/2.dd4f1d22.chunk.js": "/static/js/2.dd4f1d22.chunk.js",
-    "static/js/2.dd4f1d22.chunk.js.map": "/static/js/2.dd4f1d22.chunk.js.map",
+    "static/js/2.cac74a54.chunk.js": "/static/js/2.cac74a54.chunk.js",
+    "static/js/2.cac74a54.chunk.js.map": "/static/js/2.cac74a54.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.279ac84c.chunk.css.map": "/static/css/main.279ac84c.chunk.css.map",
-    "static/js/2.dd4f1d22.chunk.js.LICENSE.txt": "/static/js/2.dd4f1d22.chunk.js.LICENSE.txt",
-    "static/media/SD.cbf0978b.png": "/static/media/SD.cbf0978b.png",
-    "static/media/SMK.2ce8217a.jpg": "/static/media/SMK.2ce8217a.jpg",
-    "static/media/SMP.e6721118.png": "/static/media/SMP.e6721118.png",
+    "static/css/main.cfaf5823.chunk.css.map": "/static/css/main.cfaf5823.chunk.css.map",
+    "static/js/2.cac74a54.chunk.js.LICENSE.txt": "/static/js/2.cac74a54.chunk.js.LICENSE.txt",
+    "static/media/SD.736d70be.png": "/static/media/SD.736d70be.png",
+    "static/media/SMK.9170d3a9.png": "/static/media/SMK.9170d3a9.png",
+    "static/media/SMP.0b105c3b.png": "/static/media/SMP.0b105c3b.png",
+    "static/media/coding.c01dca4f.svg": "/static/media/coding.c01dca4f.svg",
+    "static/media/design.cbe18434.svg": "/static/media/design.cbe18434.svg",
     "static/media/fish.ceb98c5e.svg": "/static/media/fish.ceb98c5e.svg",
     "static/media/kemah.525ae74a.svg": "/static/media/kemah.525ae74a.svg",
+    "static/media/office.0552d6b6.svg": "/static/media/office.0552d6b6.svg",
     "static/media/pr.4f99b640.png": "/static/media/pr.4f99b640.png",
     "static/media/read.2fb5cf07.svg": "/static/media/read.2fb5cf07.svg",
     "static/media/resume.eeb79ba5.pdf": "/static/media/resume.eeb79ba5.pdf",
@@ -25,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.d0605945.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.dd4f1d22.chunk.js",
-    "static/css/main.279ac84c.chunk.css",
-    "static/js/main.f3f0612a.chunk.js"
+    "static/js/2.cac74a54.chunk.js",
+    "static/css/main.cfaf5823.chunk.css",
+    "static/js/main.4be67c0b.chunk.js"
   ]
 }
