@@ -35,7 +35,9 @@ const Home = () => {
                 <h1>Hello Im Imam</h1>
                 <h4>Im a Web Developer</h4>
                 <br />
-                <Button href={PDF}>
+                <Button
+                onClick={()=>window.open(PDF,"_blank")}
+                >
                   Download CV
                 </Button>
                 {' '}
@@ -90,7 +92,6 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-
         </div>
         {/* Mobile */}
         <div className="d-sm-block d-md-none">

@@ -1,11 +1,14 @@
-import {Container, Row, Col, Card, CardGroup} from 'react-bootstrap';
+import {Container, Row, Col, Card, CardGroup, Jumbotron} from 'react-bootstrap';
 import profileImage from '../assets/img/pr.png';
 import mountainImage from '../assets/svg/kemah.svg';
 import readingImage from '../assets/svg/read.svg';
 import fishImage from '../assets/svg/fish.svg';
+import OFFICE from '../assets/svg/office.svg';
+import design from '../assets/svg/design.svg';
 import primarySchool from '../assets/img/SD.png';
 import JHS from '../assets/img/SMP.png';
-import VHS from '../assets/img/SMK.jpg';
+import VHS from '../assets/img/SMK.png';
+import PROGRAMING from '../assets/svg/coding.svg';
 import {BrowserRouter as Router} from 'react-router-dom';
 import ReadMoreReact from 'read-more-react';
 
@@ -36,63 +39,42 @@ function About () {
                   ideal={150}
                   max={200}
                   readMoreText={
-                    <b><p className="text-right">Read more...</p></b>
+                    <b><p className="text-right readmore">Read more...</p></b>
                   }
                 />
               </Col>
 
             </Row>
           </Container>
-
           <Container>
             <div className="text-center skils">
               <h2><u>Education</u></h2>
-              <hr />
-              <Row md={3}>
-                <Col>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>SDN BABAKAN SURABAYA UTARA</Card.Title>
-                      <Card.Img
-                        src={primarySchool}
-                        className="vertical profileImage mx-auto"
-                        variant="top"
-                      />
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>SMP NEGERI 37 BANDUNG</Card.Title>
-                      <Card.Img
-                        src={JHS}
-                        className="vertical profileImage mx-auto"
-                        variant="top"
-                      />
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>SMK MVP ARS Internasional</Card.Title>
-                      <Card.Img
-                        src={VHS}
-                        className="vertical profileImage mx-auto"
-                        variant="top"
-                      />
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
+              <CardGroup className="cgShadow mt-4">
+                <Card>
+                  <Card.Img variant="top" src={primarySchool} />
+                  <Card.Body>
+                    <Card.Title>SDN BABAKAN SURABAYA UTARA</Card.Title>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src={JHS} />
+                  <Card.Body>
+                    <Card.Title>SMP NEGERI 37 BANDUNG</Card.Title>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src={VHS} />
+                  <Card.Body>
+                    <Card.Title>SMKS MVP ARS Internasional</Card.Title>
+                  </Card.Body>
+                </Card>
+              </CardGroup>
             </div>
           </Container>
           <Container>
             <div className="text-center skils">
               <h2><u>Hobby</u></h2>
-              <hr />
-              <CardGroup>
+              <CardGroup className="cgShadow mt-4">
                 <Card>
                   <Card.Body>
                     <Card.Img
@@ -129,27 +111,118 @@ function About () {
           <Container>
             <div className="skils">
               <h2 className="text-center"><u>SKILS</u></h2>
-              <h3>
+              {/* <h3>
                 Programing :<br />
                 Design :<br />
                 Office :
-              </h3>
+              </h3> */}
+              <Row className="center mt-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <Card.Img
+                        src={PROGRAMING}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <h3 className="centered">PROGRAMING</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h3 className="my-2">PROGRAMING</h3>
+                      <Row className="justify-content-between">
+                        {/* <Col>
+                          <h6 className="my-2"><u>NATIVE</u></h6>
+                          PHP NATIVE<br />
+                        </Col>
+                        <Col>
+                          <h6 className="my-2"><u>Framework</u></h6>
+                          REACT JS<br />
+                          FLUTTER<br />
+                          VUE JS<br />
+                        </Col> */}
+                        <Col>
+                          <br />
+                          HTML<br />
+                          PHP<br />
+                          CSS<br />
+                          JS<br />
+                        </Col>
+                        <Col>
+                          <h6 className="my-2"><u>Framework</u></h6>
+                          REACT JS<br />
+                          FLUTTER<br />
+                          VUE JS<br />
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <Card.Img
+                        src={design}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <h3 className="centered">DESIGN</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h2 className="mt-2">DESIGN</h2>
+                      <Row className="justify-content-between">
+                        <Col>
+                          <p>Figma</p>
+                          <p>Adobe Ilustator</p>
+                        </Col>
+                        <Col>
+                          <p>Inkscape</p>
+                          <p>Adobe Photoshop</p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <Card.Img
+                        src={OFFICE}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <h3 className="centered">OFFICE</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h2 className="mt-2">OFFICE</h2>
+                      <Row className="justify-content-between">
+                        <Col>
+                          <p>Microsoft Word</p>
+                          <p>Visio</p>
+                        </Col>
+                        <Col>
+                          <p>Microsoft Excel</p>
+                          <p>Power Point</p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+
+              </Row>
             </div>
           </Container>
         </div>
 
         {/* Mobile */}
         <div className="d-sm-block d-md-none">
-          <Container className="mt-5 mb-5 text-center">
+          <Jumbotron className="mt-4 text-center">
             <Row className="justify-content-center">
-              <div>
-                <h1 className="text-center mt-4">Hello im Imam</h1>
-              </div>
               <Row>
                 <div>
                   <img
                     src={profileImage}
-                    className="profileImage mx-auto"
+                    className="profileImage my-4 mx-auto"
                     alt="profileImage"
                   />
                 </div>
@@ -164,103 +237,201 @@ function About () {
                   min={100}
                   ideal={150}
                   max={200}
-                  readMoreText={
-                    <b><p className=" text-dark">Read more...</p></b>
-                  }
+                  readMoreText={<b><p className="readmore">Read more...</p></b>}
                 />
               </Col>
             </Row>
-          </Container>
+          </Jumbotron>
           <Container>
             <div className="text-center skils">
               <h2><u>Education</u></h2>
-              <hr />
-              <Row xs={1}>
+              <Row className="mt-4" xs={1}>
                 <Col>
                   <Card>
                     <Card.Body>
-                      <Card.Title>SDN BABAKAN SURABAYA UTARA</Card.Title>
                       <Card.Img
                         src={primarySchool}
                         className="vertical profileImage mx-auto"
                         variant="top"
                       />
+                      <Card.Title>SDN BABAKAN SURABAYA UTARA</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
                 <Col>
                   <Card>
                     <Card.Body>
-                      <Card.Title>SMP NEGERI 37 BANDUNG</Card.Title>
                       <Card.Img
                         src={JHS}
                         className="vertical profileImage mx-auto"
                         variant="top"
                       />
+                      <Card.Title>SMP NEGERI 37 BANDUNG</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
                 <Col>
                   <Card>
                     <Card.Body>
-                      <Card.Title>SMK MVP ARS Internasional</Card.Title>
                       <Card.Img
                         src={VHS}
                         className="vertical profileImage mx-auto"
                         variant="top"
                       />
+                      <Card.Title>SMK MVP ARS Internasional</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
               </Row>
             </div>
           </Container>
+
           <Container>
             <div className="text-center skils">
-              <h4><u>Hobby</u></h4>
-              <hr />
-              <CardGroup>
-                <Card>
-                  <Card.Body>
-                    <Card.Img
-                      src={mountainImage}
-                      className="vertical profileImage mx-auto"
-                      variant="top"
-                    />
-                    <h3 className="centered">HIKING</h3>
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Body>
-                    <Card.Img
-                      src={readingImage}
-                      className="vertical profileImage mx-auto"
-                      variant="top"
-                    />
-                    <h3 className="centered">READING</h3>
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Body>
-                    <Card.Img
-                      src={fishImage}
-                      className="vertical profileImage mx-auto"
-                      variant="top"
-                    />
-                    <h3 className="centered">KEEP FISH</h3>
-                  </Card.Body>
-                </Card>
-              </CardGroup>
+              <h2><u>Hobby</u></h2>
+              <Row className="mt-4" xs={1}>
+                <Col>
+                  <Card>
+                    <Card.Body>
+                      <Card.Img
+                        src={mountainImage}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <Card.Title>HIKING</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col>
+                  <Card>
+                    <Card.Body>
+                      <Card.Img
+                        src={readingImage}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <Card.Title>READING</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col>
+                  <Card>
+                    <Card.Body>
+                      <Card.Img
+                        src={fishImage}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <Card.Title>KEEP FISH</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
             </div>
           </Container>
+
           <Container>
-            <div className="skils">
-              <h4 className="text-center"><u>SKILS</u></h4>
-              <h5>
+            <div className="skils text-center">
+              <h2><u>SKILS</u></h2>
+              <small>TAP CARD TO VIEW</small>
+              {/* <h3>
                 Programing :<br />
                 Design :<br />
                 Office :
-              </h5>
+              </h3> */}
+              <Row className="center mt-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <Card.Img
+                        src={PROGRAMING}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <h3 className="centered">PROGRAMING</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h3 className="my-2">PROGRAMING</h3>
+                      <Row className="justify-content-between">
+                        {/* <Col>
+                          <h6 className="my-2"><u>NATIVE</u></h6>
+                          PHP NATIVE<br />
+                        </Col>
+                        <Col>
+                          <h6 className="my-2"><u>Framework</u></h6>
+                          REACT JS<br />
+                          FLUTTER<br />
+                          VUE JS<br />
+                        </Col> */}
+                        <Col>
+                          <br />
+                          HTML<br />
+                          PHP<br />
+                          CSS<br />
+                          JS<br />
+                        </Col>
+                        <Col>
+                          <h6 className="my-2"><u>Framework</u></h6>
+                          REACT JS<br />
+                          FLUTTER<br />
+                          VUE JS<br />
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <Card.Img
+                        src={design}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <h3 className="centered">DESIGN</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h2 className="mt-2">DESIGN</h2>
+                      <Row className="justify-content-between">
+                        <Col>
+                          <p>Figma</p>
+                          <p>Adobe Ilustator</p>
+                        </Col>
+                        <Col>
+                          <p>Inkscape</p>
+                          <p>Adobe Photoshop</p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <Card.Img
+                        src={OFFICE}
+                        className="vertical profileImage mx-auto"
+                        variant="top"
+                      />
+                      <h3 className="centered">OFFICE</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h2 className="mt-2">OFFICE</h2>
+                      <Row className="justify-content-between">
+                        <Col>
+                          <p>Microsoft Word</p>
+                          <p>Visio</p>
+                        </Col>
+                        <Col>
+                          <p>Microsoft Excel</p>
+                          <p>Power Point</p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </div>
+                </div>
+              </Row>
             </div>
           </Container>
         </div>

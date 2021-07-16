@@ -26,7 +26,7 @@
 
 .center {
     color: #0F1923;
-    padding-top: 25%;
+    /* padding-top: 25%; */
     justify-content: center;
     align-self: center;
 }
@@ -37,14 +37,31 @@
      text-align: center;
 }
 
-
-.navbar{
-    justify-content:space-between;
+.readmore{
+    color: #0D6EFD;
+}
+.readmore:hover{
+    color: #0d52b9;
 }
 
+.navbar{
+    overflow: hidden;
+    /* justify-content:space-between; */
+    /* background-color: #E9ECEF; */
+}
+
+/* Color */
+.athensGray{
+    background-color: #E9ECEF;
+}
 
 /* Card */
 /* width:300px;height:300px; */
+.cgShadow{
+    box-shadow: 4px 2px 22px -1px rgba(131, 129, 129, 0.67);
+    -webkit-box-shadow: 4px 2px 22px -1px rgba(131, 129, 129, 0.67);
+    -moz-box-shadow: 4px 2px 22px -1px rgba(131, 129, 129, 0.67);
+}
 .vertical{
 padding: 20px;
 height: 100%;
