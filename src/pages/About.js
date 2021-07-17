@@ -111,11 +111,6 @@ function About () {
           <Container>
             <div className="skils">
               <h2 className="text-center"><u>SKILS</u></h2>
-              {/* <h3>
-                Programing :<br />
-                Design :<br />
-                Office :
-              </h3> */}
               <Row className="center mt-4">
                 <div class="flip-card">
                   <div class="flip-card-inner">
@@ -125,10 +120,10 @@ function About () {
                         className="vertical profileImage mx-auto"
                         variant="top"
                       />
-                      <h3 className="centered">PROGRAMING</h3>
+                      <h3 className="centered">CODING</h3>
                     </div>
                     <div class="flip-card-back">
-                      <h3 className="my-2">PROGRAMING</h3>
+                      <h3 className="my-2">CODING</h3>
                       <Row className="justify-content-between">
                         {/* <Col>
                           <h6 className="my-2"><u>NATIVE</u></h6>
@@ -171,12 +166,14 @@ function About () {
                       <h2 className="mt-2">DESIGN</h2>
                       <Row className="justify-content-between">
                         <Col>
-                          <p>Figma</p>
-                          <p>Adobe Ilustator</p>
+                          Figma<br/>
+                          Adobe Ilustator<br/>
+                          
                         </Col>
                         <Col>
-                          <p>Inkscape</p>
-                          <p>Adobe Photoshop</p>
+                          Inkscape<br/>
+                          Adobe Photoshop<br/>
+                          
                         </Col>
                       </Row>
                     </div>
@@ -334,11 +331,6 @@ function About () {
             <div className="skils text-center">
               <h2><u>SKILS</u></h2>
               <small>TAP CARD TO VIEW</small>
-              {/* <h3>
-                Programing :<br />
-                Design :<br />
-                Office :
-              </h3> */}
               <Row className="center mt-4">
                 <div class="flip-card">
                   <div class="flip-card-inner">
@@ -348,21 +340,11 @@ function About () {
                         className="vertical profileImage mx-auto"
                         variant="top"
                       />
-                      <h3 className="centered">PROGRAMING</h3>
+                      <h3 className="centered">CODING</h3>
                     </div>
                     <div class="flip-card-back">
-                      <h3 className="my-2">PROGRAMING</h3>
+                      <h3 className="my-2">CODING</h3>
                       <Row className="justify-content-between">
-                        {/* <Col>
-                          <h6 className="my-2"><u>NATIVE</u></h6>
-                          PHP NATIVE<br />
-                        </Col>
-                        <Col>
-                          <h6 className="my-2"><u>Framework</u></h6>
-                          REACT JS<br />
-                          FLUTTER<br />
-                          VUE JS<br />
-                        </Col> */}
                         <Col>
                           <br />
                           HTML<br />
