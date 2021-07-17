@@ -12,7 +12,7 @@ function Portfolio () {
         <h3 className="text-center">MY PORTFOLIO</h3>
         <hr />
         {/* Start Card */}
-        <Row className="center mt-4">
+        <Row className="center my-4">
         <h4 className="d-sm-block d-md-none text-center"><u>MY PORTFOLIO</u></h4>
           {/* Poliklinik */}
           <div class="flip-card">

@@ -20,6 +20,7 @@ const Home = () => {
   return (
     <Router>
       <div>
+        <Container>
         {/* Desktop */}
         <div className="d-none d-md-block">
           <Container>
@@ -159,6 +160,7 @@ const Home = () => {
             </Row>
           </Container>
         </div>
+      </Container>
       </div>
     </Router>
   );
