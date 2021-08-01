@@ -62,6 +62,11 @@
     -webkit-box-shadow: 4px 2px 22px -1px rgba(131, 129, 129, 0.67);
     -moz-box-shadow: 4px 2px 22px -1px rgba(131, 129, 129, 0.67);
 }
+.cgShadow:hover{
+    box-shadow: 4px 2px 22px -1px #575A89;
+    -webkit-box-shadow: 4px 2px 22px -1px #575A89;
+    -moz-box-shadow: 4px 2px 22px -1px #575A89;
+}
 .vertical{
 padding: 20px;
 height: 100%;

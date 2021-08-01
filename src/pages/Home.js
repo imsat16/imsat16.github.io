@@ -20,10 +20,9 @@ const Home = () => {
   return (
     <Router>
       <div>
-        <Container>
-        {/* Desktop */}
-        <div className="d-none d-md-block">
-          <Container>
+        <Container className="mt-5 mb-5 text-center">
+          {/* Desktop */}
+          <Container className="d-none d-md-block">
             <Row className="align-items-center">
               <Col md={6}>
                 <img
@@ -34,11 +33,8 @@ const Home = () => {
               </Col>
               <Col md={5}>
                 <h1>Hello Im Imam</h1>
-                <h4>Im a Web Developer</h4>
-                <br />
-                <Button
-                onClick={()=>window.open(PDF,"_blank")}
-                >
+                <p className="text-muted">Web Dev | Mobile Dev</p>
+                <Button onClick={() => window.open (PDF, '_blank')}>
                   Download CV
                 </Button>
                 {' '}
@@ -93,10 +89,8 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </div>
-        {/* Mobile */}
-        <div className="d-sm-block d-md-none">
-          <Container className="mt-5 mb-5 text-center">
+          {/* Mobile */}
+          <Container className="d-sm-block d-md-none">
             <Row className="justify-content-center">
               <div>
                 <h1 className="text-center mt-5">Hello im Imam</h1>
@@ -109,9 +103,9 @@ const Home = () => {
                 />
               </Row>
               <Col xs="12">
-                <h4 className="text-center">Web Dev | Mobile Dev</h4>
+                <p className="text-muted">Web Dev | Mobile Dev</p>
               </Col>
-              <Col xs="12" className="mt-4 mb-2">
+              <Col xs="12" className="mb-2">
                 <Button variant="dark" type="button" onClick={handleClick}>
                   About Me <FaArrowRight />
                 </Button>
@@ -159,8 +153,7 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </div>
-      </Container>
+        </Container>
       </div>
     </Router>
   );
