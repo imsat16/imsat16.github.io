@@ -5,6 +5,7 @@ import SAS from '../assets/img/sas.png';
 import SPP from '../assets/img/spp.jpg';
 import FAUCET from '../assets/img/autofaucet.png';
 import TOIK from '../assets/img/toik.png';
+import SUKIT from '../assets/img/sukit.png'
 
 function Portfolio () {
   return (
@@ -37,7 +38,11 @@ function Portfolio () {
                     '_blank'
                   )}
               >
-                <Col><h4>Poliklinik</h4><small>Tap To Open</small></Col>
+                <Col>
+                <h4>Poliklinik</h4>
+                <h6>Web APP</h6>
+                <small>Tap To Open</small>
+                </Col>
               </div>
             </div>
           </div>
@@ -60,7 +65,9 @@ function Portfolio () {
                   )}
               >
                 <Col>
-                  <h4>Smart Aquaponic System</h4><small>Tap To Open</small>
+                  <h4>Smart Aquaponic System</h4>
+                <h6>Micro Controller</h6>
+                  <small>Tap To Open</small>
                 </Col>
               </div>
             </div>
@@ -82,7 +89,9 @@ function Portfolio () {
                     '_blank'
                   )}
               >
-                <Col><h4>Automatic Faucet</h4><small>Tap To Open</small></Col>
+                <Col><h4>Automatic Faucet</h4>
+                <h6>Micro Controller</h6>
+                <small>Tap To Open</small></Col>
               </div>
             </div>
           </div>
@@ -100,7 +109,9 @@ function Portfolio () {
                 onClick={() =>
                   window.open ('https://github.com/imsat16/spppay', '_blank')}
               >
-                <Col><h4>SPP PAY</h4><small>Tap To Open</small></Col>
+                <Col><h4>SPP PAY</h4>
+                <h6>Mobile APP</h6>
+                <small>Tap To Open</small></Col>
               </div>
             </div>
           </div>
@@ -121,7 +132,34 @@ function Portfolio () {
                     '_blank'
                   )}
               >
-                <Col><h4>TOIK</h4><small>Tap To Open</small></Col>
+                <Col><h4>TOIK</h4>
+                <h6>Web APP</h6>
+                <small>Tap To Open</small></Col>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <Card.Img
+                  src={SUKIT}
+                  className="vertical profileImage mx-auto"
+                  variant="top"
+                />
+              </div>
+              <div
+                class="flip-card-back go-center"
+                onClick={() =>
+                  window.open (
+                    'http://sukabumikita.my.id/',
+                    '_blank'
+                  )}
+              >
+                <Col>
+                <h4>Sukabumi Kita</h4>
+                <h6>Web & Mobile APP</h6>
+                <small>Tap To Open</small>
+                </Col>
               </div>
             </div>
           </div>
