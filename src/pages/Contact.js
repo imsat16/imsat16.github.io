@@ -1,93 +1,111 @@
-import {Container, Card,Row,Button,Col, CardGroup} from 'react-bootstrap';
-import CONTACT from '../assets/img/svg/contact.svg';
-import {
-  FaYoutube,
-  FaInstagram,
-  FaTwitter,
-  FaGithub,
-} from 'react-icons/fa';
-import {SiTiktok,SiGmail} from 'react-icons/si'
+import React, {useState} from 'react';
+import {HAND} from '../assets/img/IndexImg';
+import FooterComp from '../Component/FooterComp';
 
 function Contact () {
+  const [data, setData] = useState ({
+    nama: '',
+    email: '',
+    phone: '',
+    pesan: '',
+  });
+
+  const {nama, email, phone, pesan} = data;
+
+  const handleChange = e => {
+    setData ({...data, [e.target.name]: e.target.value});
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault ();
+
+    try {
+      const response = await fetch (
+        'https://v1.nocodeapi.com/imsat/google_sheets/IGAkFzRkzHRmFbji?tabId=Sheet1',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify ([
+            [nama, email, phone, pesan, new Date ().toLocaleString ()],
+          ]),
+        }
+      );
+      await response.json ();
+      setData ({...data, nama: '', email: '', phone: '', pesan: ''});
+    } catch (err) {
+      console.log (err);
+    }
+  };
+
   return (
-    <div className="Contact">
-      <Container>
-        <div className="text-center skils">
-          <small className="d-sm-block d-md-none">penambah</small>
-          <h2><u>CONTACT ME !</u></h2>
-          <CardGroup className="cgShadow">
-            <Card className="d-none d-md-block">
-              <Card.Body>
-                <Card.Img
-                  src={CONTACT}
-                  className="vertical profileImage mx-auto"
-                  variant="top"
-                />
-                {/* <h3 className="centered">HIKING</h3> */}
-              </Card.Body>
-            </Card>
-            <Card>
-              <Card.Body>
-                <Card.Text className="d-flex flex-column my-5 justify-content-start align-items-end">
-                  <Col>
-                  <Button
-                    onClick={() =>
-                      window.open ('mailto:imamsatrio23@gmail.com', '_blank')}
-                    variant="outline-dark"
-                  >
-                    <SiGmail />
-                  </Button> {" "}
-                  <Button
-                    onClick={() =>
-                      window.open ('https://instagram.com/im_sat16', '_blank')}
-                    variant="outline-dark"
-                  >
-                    <FaInstagram />
-                  </Button> {" "}
-                
-                  <Button
-                    onClick={() =>
-                      window.open ('https://twitter.com/im_sat16', '_blank')}
-                    variant="outline-dark"
-                  >
-                    <FaTwitter />
-                  </Button> {" "}
-              </Col>
-              <br/>
-              <Col>
-                  <Button
-                    onClick={() =>
-                      window.open (
-                        'https://www.youtube.com/channel/UCE9H0gB19xCSnKjAV6sGPWg',
-                        '_blank'
-                      )}
-                    variant="outline-dark"
-                  >
-                    <FaYoutube />
-                  </Button> {" "}
-                
-                  <Button
-                    onClick={() =>
-                      window.open ('https://github.com/imsat16', '_blank')}
-                    variant="outline-dark"
-                  >
-                    <FaGithub />
-                  </Button> {" "}
-                  
-                  <Button
-                    onClick={() =>
-                      window.open ('https://www.tiktok.com/@im_sat16', '_blank')}
-                    variant="outline-dark"
-                  >
-                    <SiTiktok />
-                  </Button> {" "}
-                  </Col>
-              </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardGroup>
+    <div>
+      <section className="grid md:grid-cols-2 p-10 font-semibold">
+        <div className=" flex justify-center items-center flex-col text-white ">
+          <h2>Contact</h2>
+          <img alt="" src={HAND} className=" w-80 items-center" />
         </div>
-      </Container>
+        <form className="" name="imsat-contact-form" onSubmit={handleSubmit}>
+          <div className="grid gap-3 ">
+            <div className="flex flex-col">
+              <p className="text-white ">Nama</p>
+              <input
+                className="p-4 bg-white rounded-md"
+                typeof="text"
+                placeholder="full name"
+                name="nama"
+                value={nama}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-white ">Email</p>
+              <input
+                className="p-4 bg-white rounded-md"
+                typeof="email"
+                placeholder="example@gmail.com"
+                name="email"
+                value={email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-white ">Phone number</p>
+              <input
+                className="p-4 bg-white rounded-md"
+                typeof="number"
+                placeholder="+62 1293 1293 3123"
+                name="phone"
+                value={phone}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-white ">Message</p>
+              <textarea
+                className="p-4 h-44 bg-white rounded-md"
+                typeof="text"
+                placeholder="message"
+                name="pesan"
+                value={pesan}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="text-white">
+              <div className=" float-right">
+                <button
+                  typeof="submit"
+                  className=" px-4 py-2 font-semibold rounded-md border border-indigo-600 hover:bg-indigo-600 shadow-md flex gap-2 items-center"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <FooterComp />
     </div>
   );
 }

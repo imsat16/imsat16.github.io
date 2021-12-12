@@ -1,162 +1,91 @@
-import React from 'react';
-import {Row, Col, Container, Button} from 'react-bootstrap';
-import profileImage from '../assets/img/pr.png';
-import PDF from '../assets/Document/resume.pdf';
-import {BrowserRouter as Router, useHistory} from 'react-router-dom';
-import {
-  FaArrowRight,
-  FaYoutube,
-  FaInstagram,
-  FaTwitter,
-  FaGithub,
-} from 'react-icons/fa';
+import React, {useEffect} from 'react';
+import {PROF} from '../assets/img/IndexImg';
+import {useHistory} from 'react-router-dom';
+import {gsap} from 'gsap';
+import {TextPlugin} from 'gsap/TextPlugin';
+import PDF from '../assets/Document/resume.pdf'
 
-const Home = () => {
+gsap.registerPlugin (TextPlugin);
+
+function Home () {
+  useEffect (() => {
+    gsap.to ('.hi', {duration: 1.5, y: -20, ease: 'power1.out(1.5)'});
+    gsap.to ('.qwe', {duration: 1.5, text: 'Web dev | Mobile dev'});
+  });
   let history = useHistory ();
 
   function handleClick () {
     history.push ('/about');
   }
   return (
-    <Router>
-      <div>
-        <Container className="mt-5 mb-5 text-center">
-          {/* Desktop */}
-          <Container className="d-none d-md-block">
-            <Row className="align-items-center">
-              <Col md={6}>
-                <img
-                  src={profileImage}
-                  className="profileImage"
-                  alt="profileImage"
-                />
-              </Col>
-              <Col md={5}>
-                <h1>Hello Im Imam</h1>
-                <p className="text-muted">Web Dev | Mobile Dev</p>
-                <Button onClick={() => window.open (PDF, '_blank')}>
+    <section className="home fixed w-screen text-white ">
+      <div className="flex flex-col h-screen justify-center relative">
+        <div className="flex items-center flex-col md:flex-row justify-evenly px-8 py-4 absolute w-full inset-x-0 top-20 z-40">
+          <h2 className=" block md:hidden py-3 animate-bounce hi">
+            Hello i'm Imam
+          </h2>
+          <div className=" rounded-md pt-2 hover:rounded-xl bg-white transition duration-700 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-100">
+            <img
+              src={PROF}
+              alt="profile"
+              onClick={handleClick}
+              className="transform hover:scale-110 hover:rounded-b-2xl w-56 rounded-b-md md:w-72 transition duration-500 ease-in-out hover:-translate-y-3 md:hover:-translate-y-2"
+            />
+          </div>
+          <div className=" py-5 md:py-0 px-0 lg:py-5 text-center">
+            <h1 className="hidden md:block animate-bounce hi">
+              Hello i'm Imam
+            </h1>
+            <h5 className=" text-gray-600 font-medium qwe">{' '}</h5>
+            <div className="flex flex-col md:flex-row items-center justify-center py-2">
+              <div className="py-2 md:pr-2">
+                <button onClick={() => window.open (PDF, '_blank')} className="flex flex-row shadow-md py-2 border-2 hover:border-transparent px-3 rounded-lg md:transition md:duration-500 md:ease-in-out  hover:bg-blue-200 transform md:hover:-translate-x-1 md:hover:scale-110">
                   Download CV
-                </Button>
-                {' '}
-                <Button
-                  variant="outline-dark"
-                  type="button"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div className="">
+                <button
+                  className="flex flex-row shadow-md py-2 border-2 hover:border-transparent px-3 rounded-lg transition md:duration-500 md:ease-in-out  hover:bg-blue-200 transform md:hover:translate-x-1 md:hover:scale-110"
                   onClick={handleClick}
                 >
-                  About Me <FaArrowRight />
-                </Button>
-              </Col>
-              <Col md={1}>
-                <Row>
-                  <Button
-                    onClick={() =>
-                      window.open ('https://instagram.com/im_sat16', '_blank')}
-                    variant="outline-dark"
+                  Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                    <FaInstagram />
-                  </Button>
-                </Row>
-                <Row className="mt-2 mb-2">
-                  <Button
-                    onClick={() =>
-                      window.open ('https://twitter.com/im_sat16', '_blank')}
-                    variant="outline-dark"
-                  >
-                    <FaTwitter />
-                  </Button>
-                </Row>
-                <Row className="mb-2">
-                  <Button
-                    onClick={() =>
-                      window.open (
-                        'https://www.youtube.com/channel/UCE9H0gB19xCSnKjAV6sGPWg',
-                        '_blank'
-                      )}
-                    variant="outline-dark"
-                  >
-                    <FaYoutube />
-                  </Button>
-                </Row>
-                <Row>
-                  <Button
-                    onClick={() =>
-                      window.open ('https://github.com/imsat16', '_blank')}
-                    variant="outline-dark"
-                  >
-                    <FaGithub />
-                  </Button>
-                </Row>
-              </Col>
-            </Row>
-          </Container>
-          {/* Mobile */}
-          <Container className="d-sm-block d-md-none">
-            <Row className="justify-content-center">
-              <div>
-                <h1 className="text-center mt-5">Hello im Imam</h1>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
               </div>
-              <Row>
-                <img
-                  src={profileImage}
-                  className="profileImage mx-auto"
-                  alt="profileImage"
-                />
-              </Row>
-              <Col xs="12">
-                <p className="text-muted">Web Dev | Mobile Dev</p>
-              </Col>
-              <Col xs="12" className="mb-2">
-                <Button variant="dark" type="button" onClick={handleClick}>
-                  About Me <FaArrowRight />
-                </Button>
-              </Col>
-              <Col xs="12" className="mb-4">
-                <Button href={PDF}>
-                  Download CV
-                </Button>
-              </Col>
-              <Col xs="12">
-                <Button
-                  onClick={() =>
-                    window.open ('https://instagram.com/im_sat16', '_blank')}
-                  variant="outline-dark"
-                >
-                  <FaInstagram />
-                </Button>
-                {' '}
-                <Button
-                  onClick={() =>
-                    window.open ('https://twitter.com/im_sat16', '_blank')}
-                  variant="outline-dark"
-                >
-                  <FaTwitter />
-                </Button>
-                {' '}
-                <Button
-                  onClick={() =>
-                    window.open ('https://github.com/imsat16', '_blank')}
-                  variant="outline-dark"
-                >
-                  <FaGithub />
-                </Button>
-                {' '}
-                <Button
-                  onClick={() =>
-                    window.open (
-                      'https://www.youtube.com/channel/UCE9H0gB19xCSnKjAV6sGPWg',
-                      '_blank'
-                    )}
-                  variant="outline-dark"
-                >
-                  <FaYoutube />
-                </Button>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
+            </div>
+          </div>
+        </div>
       </div>
-    </Router>
+      {/* <FooterComp /> */}
+    </section>
   );
-};
+}
 
 export default Home;

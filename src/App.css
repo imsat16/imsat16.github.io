@@ -2,15 +2,15 @@
   font-family: Valorant;
   src: url(./assets/fonts/Valorant\ Font.ttf);
 } */
-@import url('https://fonts.googleapis.com/css2?Ubuntu:wght@400;500;700');
+/* @import url('https://fonts.googleapis.com/css2?Ubuntu:wght@400;500;700'); */
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 body{
   /* background-color: #ECE8E1; */
-  background-color: #fff;
+  background-color: #93C5FD;
   /* font-family: Valorant; */
   font-family: 'Ubuntu',
   sans-serif;
