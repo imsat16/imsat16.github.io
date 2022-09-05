@@ -13,7 +13,8 @@ const Experiences = () => {
     const [iot, setIot] = useState(false);
     const [judul, setJudul] = useState('');
     const [fetchError, setFetchError] = useState(null)
-    const [myEx, setMyEx] = useState(null)
+    const [myEx, setMyEx] =  useState<any[]>([])
+    // const [arr, setArr] = useState<any[]>([])
 
     useEffect(() => {
         const fetcExp = async () =>{
@@ -22,7 +23,7 @@ const Experiences = () => {
             .select()
 
             if (error) {
-                setMyEx(null)
+                setMyEx(error)
                 setFetchError(null);
                 console.log(error);
             }
@@ -39,48 +40,48 @@ const Experiences = () => {
     const handleAllex = () => {
         allex ? setAllex(false) : setAllex(true),
             setJudul('All'),
-            (web = setWeb(false)),
-            (iot = setIot(false)),
-            (mobile = setMobile(false))
+            setWeb(false),
+            setIot(false),
+            setMobile(false)
 
-        if (allex = setAllex(true)) {
-            allex = setAllex(false)
+        if (allex == (true)) {
+            setAllex(false)
         }
         
     }
     const handleWeb = () => {
         web ? setWeb(false) : setWeb(true),
             setJudul('Website'),
-            (mobile = setMobile(false)),
-            (iot = setIot(false)),
-            (allex = setAllex(false))
+            setMobile(false),
+            setIot(false),
+            setAllex(false)
 
-        if ((web = setWeb(true))) {
-            web = setWeb(false)
+        if (web == (true)) {
+            setWeb(false)
         }
     }
     const handleMobile = () => {
         mobile ? setMobile(false) : setMobile(true),
             setJudul('Mobile'),
-            (web = setWeb(false)),
-            (iot = setIot(false)),
-            (allex = setAllex(false))
+            setWeb(false),
+            setIot(false),
+            setAllex(false)
 
 
-        if ((mobile = setMobile(true))) {
-            mobile = setMobile(false)
+        if (mobile == (true)) {
+            setMobile(false)
         }
     }
     const handleIot = () => {
         iot ? setIot(false) : setIot(true),
             setJudul('Iot'),
-            (web = setWeb(false)),
-            (mobile = setMobile(false)),
-            (allex = setAllex(false))
+            setWeb(false),
+            setMobile(false),
+            setAllex(false)
 
 
-        if ((iot = setIot(true))) {
-            iot = setIot(false)
+        if (iot == (true)) {
+            setIot(false)
         }
     }
 
