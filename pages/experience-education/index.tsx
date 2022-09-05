@@ -106,8 +106,8 @@ const Experiences = () => {
                                 .filter(my => my.type === 'web')
                                 .map((my:any)=>(
                                     <div key={my.id}>
-                                        <Card link={`/experience-education/${my.id}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
-                                        {/* <Card size='md' display='grid' className={`shadow-md md:border-none grid-cols-6 content-center`}> */}
+                                        {/* <Card link={`/experience-education/${my.id}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'> */}
+                                        <Card link={`/experience-education`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
                                             <div className="relative col-span-2">
                                                 <Image alt='' layout='fill' objectFit='contain' src={`/${my.img}`} />
                                             </div>
@@ -128,8 +128,8 @@ const Experiences = () => {
                                 .filter(my => my.type === 'mobile')
                                 .map((my:any)=>(
                                     <div key={my.id}>
-                                        <Card link={`/experiences/${my.name}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
-                                        {/* <Card size='md' display='grid' className={`shadow-md md:border-none grid-cols-6 content-center`}> */}
+                                        {/* <Card link={`/experiences/${my.name}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'> */}
+                                        <Card link={`/experience-education`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
                                             <div className="relative col-span-2">
                                                 <Image alt='' layout='fill' objectFit='contain' src={`/${my.img}`} />
                                             </div>
@@ -150,8 +150,8 @@ const Experiences = () => {
                                 .filter(my => my.type === 'iot')
                                 .map((my:any)=>(
                                     <div key={my.id}>
-                                        <Card link={`/experiences/${my.name}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
-                                        {/* <Card size='md' display='grid' className={`shadow-md md:border-none grid-cols-6 content-center`}> */}
+                                        {/* <Card link={`/experiences/${my.name}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'> */}
+                                        <Card link={`/experience-education`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
                                             <div className="relative col-span-2">
                                                 <Image alt='' layout='fill' objectFit='contain' src={`/${my.img}`} />
                                             </div>
@@ -171,8 +171,8 @@ const Experiences = () => {
                                 {myEx
                                 .map((my:any)=>(
                                     <div key={my.id}>
-                                        <Card link={`/experiences/${my.name}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
-                                        {/* <Card size='md' display='grid' className={`shadow-md md:border-none grid-cols-6 content-center`}> */}
+                                        {/* <Card link={`/experiences/${my.name}`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'> */}
+                                        <Card link={`/experience-education`} className='hover:-translate-y-5 ease-in-out duration-500 transition-all'>
                                             <div className="relative col-span-2">
                                                 <Image alt='' layout='fill' objectFit='contain' src={`/${my.img}`} />
                                             </div>
