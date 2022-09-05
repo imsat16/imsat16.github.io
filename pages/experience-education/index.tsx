@@ -67,7 +67,6 @@ const Experiences = () => {
             setIot(false),
             setAllex(false)
 
-
         if (mobile == (true)) {
             setMobile(false)
         }
@@ -78,7 +77,6 @@ const Experiences = () => {
             setWeb(false),
             setMobile(false),
             setAllex(false)
-
 
         if (iot == (true)) {
             setIot(false)
