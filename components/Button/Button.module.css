@@ -1,0 +1,30 @@
+.primary {
+  @apply bg-[#6F7F62] font-bold text-white;
+}
+
+.primary:hover,
+.primary > *:hover,
+.primary > * > *:hover,
+.primary > * > * > *:hover {
+  @apply text-white bg-[#435237];
+}
+
+.secondary {
+  @apply bg-red-400 py-1 px-3;
+}
+
+.lg {
+  @apply text-lg py-3 px-6;
+}
+
+.md {
+  @apply text-base py-2 px-5;
+}
+
+.sm {
+  @apply py-1 px-2;
+}
+
+.default {
+  @apply text-base;
+}

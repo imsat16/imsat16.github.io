@@ -1,0 +1,14 @@
+
+.horizontal{
+    @apply flex-row
+}
+.vertical{
+    @apply flex-col
+}
+
+.sm{
+    @apply p-2
+}
+.md > *{
+    @apply p-4
+}

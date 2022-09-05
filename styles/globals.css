@@ -1,16 +1,57 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-5xl md:text-6xl lg:text-8xl;
+}
+h2 {
+  @apply text-4xl lg:text-[64px];
+}
+h3 {
+  @apply lg:text-4xl;
+}
+h4{
+  @apply lg:text-2xl
+}
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
-* {
-  box-sizing: border-box;
+.paralax-img {
+  /* background-image: url("https://images.unsplash.com/photo-1533054840900-044450296331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZSUyMHNreXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); */
+  @apply bg-fixed bg-no-repeat flex bg-contain;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8200fd;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8200fd;
 }
